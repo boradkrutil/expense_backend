@@ -13,6 +13,9 @@ require('./Models/db');
 Connection()
 const PORT = process.env.PORT || 8080;
 
+app.get('/', (req, res) => {
+    res.send('<center><h1>Welcome to the expense management system</h1></center>');
+});
 app.get('/ping', (req, res) => {
     res.send('PONG');
 });
